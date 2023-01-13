@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutFragment">
+
+    <ImageView
+        android:id="@+id/imgTop"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/duck" />
+
+    <ImageView
+        android:id="@+id/imgMiddle"
+        android:layout_below="@+id/imgTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rabbit"
+        android:layout_above="@+id/imgBottom"/>
+
+    <ImageView
+        android:id="@+id/imgBottom"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dog"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
